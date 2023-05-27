@@ -1,0 +1,20 @@
+# Ignore build and object files
+**/bin/
+**/obj/
+
+# Ignore Visual Studio user-specific files
+*.suo
+*.user
+
+# Ignore NuGet package directory
+/packages/
+
+# Ignore log and temporary files
+*.log
+*.bak
+*.tmp
+
+# Ignore Visual Studio workspace folder
+.vs/
+
+
