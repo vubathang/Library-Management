@@ -159,5 +159,8 @@
   <ItemGroup>
     <None Include="Resources\library %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
