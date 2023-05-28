@@ -37,7 +37,7 @@
             this.label1.Location = new System.Drawing.Point(159, 191);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(295, 44);
+            this.label1.Size = new System.Drawing.Size(246, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thắng - Độc giả";
             // 
@@ -47,7 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "cDocGia";
             this.Size = new System.Drawing.Size(677, 488);
             this.ResumeLayout(false);
