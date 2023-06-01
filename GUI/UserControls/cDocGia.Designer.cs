@@ -68,10 +68,11 @@
             // txbAmount
             // 
             this.txbAmount.Dock = System.Windows.Forms.DockStyle.Right;
+            this.txbAmount.Enabled = false;
             this.txbAmount.Location = new System.Drawing.Point(149, 0);
             this.txbAmount.Name = "txbAmount";
             this.txbAmount.ReadOnly = true;
-            this.txbAmount.Size = new System.Drawing.Size(76, 38);
+            this.txbAmount.Size = new System.Drawing.Size(76, 44);
             this.txbAmount.TabIndex = 1;
             // 
             // label1
@@ -103,7 +104,7 @@
             // 
             // btnDeleteDG
             // 
-            this.btnDeleteDG.BackColor = System.Drawing.Color.Red;
+            this.btnDeleteDG.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnDeleteDG.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDeleteDG.Location = new System.Drawing.Point(333, 3);
             this.btnDeleteDG.Name = "btnDeleteDG";
@@ -115,7 +116,7 @@
             // 
             // btnEditDG
             // 
-            this.btnEditDG.BackColor = System.Drawing.Color.Yellow;
+            this.btnEditDG.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnEditDG.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEditDG.Location = new System.Drawing.Point(168, 3);
             this.btnEditDG.Name = "btnEditDG";
@@ -127,7 +128,7 @@
             // 
             // btnAddDG
             // 
-            this.btnAddDG.BackColor = System.Drawing.Color.Lime;
+            this.btnAddDG.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnAddDG.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAddDG.Location = new System.Drawing.Point(3, 3);
             this.btnAddDG.Name = "btnAddDG";
@@ -142,13 +143,13 @@
             this.dtgvDG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvDG.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvDG.Location = new System.Drawing.Point(3, 34);
+            this.dtgvDG.Location = new System.Drawing.Point(3, 40);
             this.dtgvDG.Name = "dtgvDG";
             this.dtgvDG.ReadOnly = true;
             this.dtgvDG.RowHeadersWidth = 62;
             this.dtgvDG.RowTemplate.Height = 28;
             this.dtgvDG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvDG.Size = new System.Drawing.Size(979, 367);
+            this.dtgvDG.Size = new System.Drawing.Size(979, 361);
             this.dtgvDG.TabIndex = 1;
             this.dtgvDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDG_CellClick);
             // 
@@ -165,7 +166,7 @@
             // 
             // cDocGia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
