@@ -33,10 +33,18 @@ namespace GUI.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string query = $"INSERT INTO NguoiDung VALUES (N'{txbuserName.Text}', N'{txbpassword.Text}', N'{txbtype.Text}', N'{txbfullName.Text}', N'{txbphone.Text}', '{dtpDate.Text}', N'{txbaddress.Text}')";
-            accessData.Command(query);
-            MessageBox.Show("Thêm thành công");
-            Close();
+            try
+            {
+                string query = $"INSERT INTO NguoiDung VALUES (N'{txbuserName.Text}', N'{txbpassword.Text}', N'{txbtype.Text}', N'{txbfullName.Text}', N'{txbphone.Text}', '{dtpDate.Text}', N'{txbaddress.Text}')";
+                accessData.Command(query);
+                MessageBox.Show("Thêm thành công");
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
     }
 }

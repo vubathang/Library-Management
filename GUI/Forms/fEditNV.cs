@@ -44,7 +44,9 @@ namespace GUI.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string query = $"update NguoiDung set " +
+            try
+            {
+                string query = $"update NguoiDung set " +
                 $"userName = N'{txbuserName.Text}', " +
                 $"passWord = N'{txbpassword.Text}', " +
                 $"type = N'{txbtype.Text}', " +
@@ -53,8 +55,13 @@ namespace GUI.Forms
                 $"birth = '{dtpDate.Value}', " +
                 $"address = N'{txbaddress.Text}' " +
                 $"where id = {nv.Id}";
-            accessdata.Command(query);
-            Close();
+                accessdata.Command(query);
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

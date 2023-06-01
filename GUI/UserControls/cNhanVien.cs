@@ -47,7 +47,9 @@ namespace GUI.UserControls
 
         private void cNhanVien_Load(object sender, EventArgs e)
         {
-            string query = "SELECT " +
+            try
+            {
+                string query = "SELECT " +
                 "id as ID," +
                 "userName as 'Tên đăng nhập'," +
                 "password as 'Mật khẩu'," +
@@ -57,11 +59,16 @@ namespace GUI.UserControls
                 "phone as 'SDT'," +
                 "type as 'Chức vụ' " +
                 "FROM NguoiDung WHERE type = N'1' or type = N'2'";
-            dgvNV.DataSource = accessData.GetTable(query);
-            dgvNV.Columns["ID"].Width = 50;
-            dgvNV.Columns["Ngày Sinh"].Width = 100;
-            dgvNV.Columns["SDT"].Width = 120;
-            txbSum.Text = Convert.ToString(dgvNV.Rows.Count-1);
+                dgvNV.DataSource = accessData.GetTable(query);
+                dgvNV.Columns["ID"].Width = 50;
+                dgvNV.Columns["Ngày Sinh"].Width = 100;
+                dgvNV.Columns["SDT"].Width = 120;
+                txbSum.Text = Convert.ToString(dgvNV.Rows.Count - 1);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void dgvNV_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -91,10 +98,17 @@ namespace GUI.UserControls
             {
                 if (MessageBox.Show("Bạn có chắc muốn xóa", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    string query = $"delete from NguoiDung where id = {nv.Id}";
-                    accessData.Command(query) ;
-                    MessageBox.Show("Xóa thành công");
-                    cNhanVien_Load(sender,e);
+                    try
+                    {
+                        string query = $"delete from NguoiDung where id = {nv.Id}";
+                        accessData.Command(query);
+                        MessageBox.Show("Xóa thành công");
+                        cNhanVien_Load(sender, e);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
             }
         }
