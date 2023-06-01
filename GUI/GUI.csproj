@@ -52,6 +52,30 @@
     <Compile Include="fHomeManagement.Designer.cs">
       <DependentUpon>fHomeManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fCapNhatPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fCapNhatPM.Designer.cs">
+      <DependentUpon>fCapNhatPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fThemPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fThemPM.Designer.cs">
+      <DependentUpon>fThemPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fTraSach.Designer.cs">
+      <DependentUpon>fTraSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fYCMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fYCMS.Designer.cs">
+      <DependentUpon>fYCMS.cs</DependentUpon>
+    </Compile>
     <Compile Include="fTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +110,18 @@
     </Compile>
     <EmbeddedResource Include="fHomeManagement.resx">
       <DependentUpon>fHomeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fCapNhatPM.resx">
+      <DependentUpon>fCapNhatPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fThemPM.resx">
+      <DependentUpon>fThemPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fTraSach.resx">
+      <DependentUpon>fTraSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fYCMS.resx">
+      <DependentUpon>fYCMS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTemplate.resx">
       <DependentUpon>fTemplate.cs</DependentUpon>
@@ -129,6 +165,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{57e05d67-52fa-4ad1-8178-447b3da762ba}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{1ec42013-bdd8-4b9d-b988-1a6a2d5c2685}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{9fd57a0b-653c-4432-9482-fdac1601d875}</Project>
