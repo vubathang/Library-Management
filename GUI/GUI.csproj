@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +52,18 @@
     </Compile>
     <Compile Include="fHomeManagement.Designer.cs">
       <DependentUpon>fHomeManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fAddNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fAddNV.Designer.cs">
+      <DependentUpon>fAddNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fEditNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fEditNV.Designer.cs">
+      <DependentUpon>fEditNV.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\fAddDG.cs">
       <SubType>Form</SubType>
@@ -92,9 +105,6 @@
     </Compile>
     <EmbeddedResource Include="fHomeManagement.resx">
       <DependentUpon>fHomeManagement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\fAddDG.resx">
-      <DependentUpon>fAddDG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTemplate.resx">
       <DependentUpon>fTemplate.cs</DependentUpon>
