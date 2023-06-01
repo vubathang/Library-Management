@@ -49,7 +49,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.nudSoLuong);
             this.groupBox1.Controls.Add(this.dtpNamXB);
@@ -64,71 +65,77 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox1.Location = new System.Drawing.Point(13, 12);
+            this.groupBox1.Location = new System.Drawing.Point(13, 17);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1096, 508);
+            this.groupBox1.Size = new System.Drawing.Size(1106, 328);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sách";
             // 
             // nudSoLuong
             // 
-            this.nudSoLuong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudSoLuong.Location = new System.Drawing.Point(766, 411);
+            this.nudSoLuong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nudSoLuong.Location = new System.Drawing.Point(766, 229);
             this.nudSoLuong.Name = "nudSoLuong";
-            this.nudSoLuong.Size = new System.Drawing.Size(123, 38);
+            this.nudSoLuong.Size = new System.Drawing.Size(133, 38);
             this.nudSoLuong.TabIndex = 6;
             this.nudSoLuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // dtpNamXB
             // 
-            this.dtpNamXB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtpNamXB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpNamXB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNamXB.Location = new System.Drawing.Point(766, 76);
             this.dtpNamXB.Name = "dtpNamXB";
-            this.dtpNamXB.Size = new System.Drawing.Size(198, 38);
+            this.dtpNamXB.Size = new System.Drawing.Size(294, 38);
             this.dtpNamXB.TabIndex = 4;
             // 
             // txtTacGia
             // 
-            this.txtTacGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTacGia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTacGia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTacGia.Location = new System.Drawing.Point(175, 230);
+            this.txtTacGia.Location = new System.Drawing.Point(175, 155);
             this.txtTacGia.Name = "txtTacGia";
-            this.txtTacGia.Size = new System.Drawing.Size(273, 38);
+            this.txtTacGia.Size = new System.Drawing.Size(283, 38);
             this.txtTacGia.TabIndex = 2;
             // 
             // txtNhaXB
             // 
-            this.txtNhaXB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNhaXB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNhaXB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNhaXB.Location = new System.Drawing.Point(175, 413);
+            this.txtNhaXB.Location = new System.Drawing.Point(175, 231);
             this.txtNhaXB.Name = "txtNhaXB";
-            this.txtNhaXB.Size = new System.Drawing.Size(273, 38);
+            this.txtNhaXB.Size = new System.Drawing.Size(283, 38);
             this.txtNhaXB.TabIndex = 3;
             // 
             // txtTheLoai
             // 
-            this.txtTheLoai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTheLoai.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTheLoai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTheLoai.Location = new System.Drawing.Point(766, 230);
+            this.txtTheLoai.Location = new System.Drawing.Point(766, 155);
             this.txtTheLoai.Name = "txtTheLoai";
-            this.txtTheLoai.Size = new System.Drawing.Size(284, 38);
+            this.txtTheLoai.Size = new System.Drawing.Size(294, 38);
             this.txtTheLoai.TabIndex = 5;
             // 
             // txtTenSach
             // 
-            this.txtTenSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenSach.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTenSach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTenSach.Location = new System.Drawing.Point(175, 76);
             this.txtTenSach.Name = "txtTenSach";
-            this.txtTenSach.Size = new System.Drawing.Size(273, 38);
+            this.txtTenSach.Size = new System.Drawing.Size(283, 38);
             this.txtTenSach.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 413);
+            this.label5.Location = new System.Drawing.Point(19, 231);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 31);
             this.label5.TabIndex = 0;
@@ -137,7 +144,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(603, 232);
+            this.label4.Location = new System.Drawing.Point(603, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(110, 31);
             this.label4.TabIndex = 0;
@@ -146,7 +153,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 232);
+            this.label7.Location = new System.Drawing.Point(19, 157);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 31);
             this.label7.TabIndex = 0;
@@ -155,7 +162,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(603, 411);
+            this.label6.Location = new System.Drawing.Point(603, 229);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(120, 31);
             this.label6.TabIndex = 0;
@@ -187,7 +194,7 @@
             this.btnThem.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnThem.Location = new System.Drawing.Point(779, 544);
+            this.btnThem.Location = new System.Drawing.Point(784, 374);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(123, 50);
             this.btnThem.TabIndex = 7;
@@ -202,7 +209,7 @@
             this.btnThoat.BackColor = System.Drawing.Color.White;
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnThoat.Location = new System.Drawing.Point(967, 544);
+            this.btnThoat.Location = new System.Drawing.Point(972, 374);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(115, 50);
             this.btnThoat.TabIndex = 8;
@@ -210,17 +217,17 @@
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // fThem
+            // fThemBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnThem;
-            this.ClientSize = new System.Drawing.Size(1121, 606);
+            this.ClientSize = new System.Drawing.Size(1131, 436);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "fThem";
+            this.Name = "fThemBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fThem";
             this.groupBox1.ResumeLayout(false);

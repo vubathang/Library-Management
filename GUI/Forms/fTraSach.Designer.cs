@@ -82,7 +82,7 @@
             this.dtpReturn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpReturn.Location = new System.Drawing.Point(320, 303);
             this.dtpReturn.Name = "dtpReturn";
-            this.dtpReturn.Size = new System.Drawing.Size(262, 38);
+            this.dtpReturn.Size = new System.Drawing.Size(300, 38);
             this.dtpReturn.TabIndex = 1;
             // 
             // dtpBorrow
@@ -92,7 +92,7 @@
             this.dtpBorrow.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpBorrow.Location = new System.Drawing.Point(319, 235);
             this.dtpBorrow.Name = "dtpBorrow";
-            this.dtpBorrow.Size = new System.Drawing.Size(262, 38);
+            this.dtpBorrow.Size = new System.Drawing.Size(300, 38);
             this.dtpBorrow.TabIndex = 0;
             // 
             // txtReader
@@ -102,7 +102,7 @@
             this.txtReader.Location = new System.Drawing.Point(319, 31);
             this.txtReader.Name = "txtReader";
             this.txtReader.ReadOnly = true;
-            this.txtReader.Size = new System.Drawing.Size(322, 38);
+            this.txtReader.Size = new System.Drawing.Size(301, 38);
             this.txtReader.TabIndex = 8;
             // 
             // txtAmount
@@ -121,7 +121,7 @@
             this.txtRefund.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRefund.Location = new System.Drawing.Point(319, 507);
             this.txtRefund.Name = "txtRefund";
-            this.txtRefund.Size = new System.Drawing.Size(263, 38);
+            this.txtRefund.Size = new System.Drawing.Size(301, 38);
             this.txtRefund.TabIndex = 4;
             this.txtRefund.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRefund_KeyPress);
             // 
@@ -132,7 +132,7 @@
             this.txtBook.Location = new System.Drawing.Point(319, 99);
             this.txtBook.Name = "txtBook";
             this.txtBook.ReadOnly = true;
-            this.txtBook.Size = new System.Drawing.Size(322, 38);
+            this.txtBook.Size = new System.Drawing.Size(301, 38);
             this.txtBook.TabIndex = 1;
             // 
             // cbTTPM
@@ -145,7 +145,7 @@
             "Hoàn thành"});
             this.cbTTPM.Location = new System.Drawing.Point(320, 439);
             this.cbTTPM.Name = "cbTTPM";
-            this.cbTTPM.Size = new System.Drawing.Size(262, 39);
+            this.cbTTPM.Size = new System.Drawing.Size(300, 39);
             this.cbTTPM.TabIndex = 3;
             // 
             // cbTTS
@@ -158,7 +158,7 @@
             "Hỏng"});
             this.cbTTS.Location = new System.Drawing.Point(319, 371);
             this.cbTTS.Name = "cbTTS";
-            this.cbTTS.Size = new System.Drawing.Size(262, 39);
+            this.cbTTS.Size = new System.Drawing.Size(300, 39);
             this.cbTTS.TabIndex = 2;
             // 
             // label8

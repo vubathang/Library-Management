@@ -65,7 +65,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(672, 435);
+            this.panel1.Size = new System.Drawing.Size(672, 443);
             this.panel1.TabIndex = 2;
             // 
             // txtDeposit
@@ -187,7 +187,7 @@
             this.panel2.Controls.Add(this.btnCancel);
             this.panel2.Controls.Add(this.btnSave);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 435);
+            this.panel2.Location = new System.Drawing.Point(0, 443);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(672, 86);
             this.panel2.TabIndex = 3;
@@ -218,7 +218,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 521);
+            this.ClientSize = new System.Drawing.Size(672, 529);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);

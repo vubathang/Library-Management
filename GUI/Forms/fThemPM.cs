@@ -8,10 +8,14 @@ namespace GUI.Forms
     {
         AccessData accessData = new AccessData();
 
-        public fThemPM()
+        public fThemPM(int id)
         {
             InitializeComponent();
+            Id = id;
         }
+        int id;
+
+        public int Id { get => id; set => id = value; }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -27,7 +31,7 @@ namespace GUI.Forms
                     string book = txtBook.Text;
                     DateTime borrowDate = dtpBorrow.Value;
                     int amount = int.Parse(nudAmount.Value.ToString());
-                    string query = $"EXEC LapPM @fullName=N'{reader}',@title=N'{book}',@amount={amount},@borrowDate='{borrowDate}'";
+                    string query = $"EXEC LapPM @idTT={Id}, @fullName=N'{reader}',@title=N'{book}',@amount={amount},@borrowDate='{borrowDate}'";
                     accessData.Command(query);
                     MessageBox.Show("Thêm phiếu mượn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Close();

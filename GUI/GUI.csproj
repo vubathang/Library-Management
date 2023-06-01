@@ -59,6 +59,18 @@
     <Compile Include="Forms\fCapNhatBook.Designer.cs">
       <DependentUpon>fCapNhatBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fEditProfile.Designer.cs">
+      <DependentUpon>fEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fThemBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,11 +154,32 @@
     <EmbeddedResource Include="fHomeManagement.resx">
       <DependentUpon>fHomeManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fAddDG.resx">
+      <DependentUpon>fAddDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fAddNV.resx">
+      <DependentUpon>fAddNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fCapNhatBook.resx">
       <DependentUpon>fCapNhatBook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fCapNhatPM.resx">
+      <DependentUpon>fCapNhatPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fEditNV.resx">
+      <DependentUpon>fEditNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fEditProfile.resx">
+      <DependentUpon>fEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fThemBook.resx">
       <DependentUpon>fThemBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fTraSach.resx">
+      <DependentUpon>fTraSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTemplate.resx">
       <DependentUpon>fTemplate.cs</DependentUpon>

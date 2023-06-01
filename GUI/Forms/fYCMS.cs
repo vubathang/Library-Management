@@ -8,10 +8,14 @@ namespace GUI.Forms
     {
         AccessData accessData = new AccessData();
 
-        public fYCMS()
+        public fYCMS(int id)
         {
             InitializeComponent();
+            this.Id = id;
         }
+        int id;
+
+        public int Id { get => id; set => id = value; }
 
         private void fYCMS_Load(object sender, EventArgs e)
         {
@@ -32,7 +36,7 @@ namespace GUI.Forms
                 {
                     try
                     {
-                        string query = $"EXEC ChapNhanYCMS @idYC = {int.Parse(dgvYCMS.CurrentRow.Cells[0].Value.ToString())}, @idTT = 2";
+                        string query = $"EXEC ChapNhanYCMS @idYC = {int.Parse(dgvYCMS.CurrentRow.Cells[0].Value.ToString())}, @idTT = {Id}";
                         accessData.Command(query);
                         MessageBox.Show("Thêm phiếu mượn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         fYCMS_Load(sender, e);

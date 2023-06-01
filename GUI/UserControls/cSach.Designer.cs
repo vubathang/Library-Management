@@ -133,6 +133,7 @@
             this.dtgSach.RowTemplate.Height = 24;
             this.dtgSach.Size = new System.Drawing.Size(1478, 499);
             this.dtgSach.TabIndex = 0;
+            this.dtgSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgSach_CellClick);
             // 
             // cSach
             // 

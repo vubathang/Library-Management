@@ -58,6 +58,7 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,7 +79,7 @@
             this.txbUsername.Dock = System.Windows.Forms.DockStyle.Right;
             this.txbUsername.Location = new System.Drawing.Point(193, 0);
             this.txbUsername.Name = "txbUsername";
-            this.txbUsername.Size = new System.Drawing.Size(514, 44);
+            this.txbUsername.Size = new System.Drawing.Size(514, 38);
             this.txbUsername.TabIndex = 1;
             // 
             // label1
@@ -88,7 +89,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 37);
+            this.label1.Size = new System.Drawing.Size(217, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập : ";
             // 
@@ -110,8 +111,8 @@
             this.txbPassword.Dock = System.Windows.Forms.DockStyle.Right;
             this.txbPassword.Location = new System.Drawing.Point(194, 0);
             this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(513, 44);
-            this.txbPassword.TabIndex = 1;
+            this.txbPassword.Size = new System.Drawing.Size(513, 38);
+            this.txbPassword.TabIndex = 2;
             // 
             // label2
             // 
@@ -120,7 +121,7 @@
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 37);
+            this.label2.Size = new System.Drawing.Size(147, 31);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mật khẩu : ";
             // 
@@ -142,8 +143,8 @@
             this.txbFullName.Dock = System.Windows.Forms.DockStyle.Right;
             this.txbFullName.Location = new System.Drawing.Point(197, 0);
             this.txbFullName.Name = "txbFullName";
-            this.txbFullName.Size = new System.Drawing.Size(510, 44);
-            this.txbFullName.TabIndex = 1;
+            this.txbFullName.Size = new System.Drawing.Size(510, 38);
+            this.txbFullName.TabIndex = 3;
             // 
             // label3
             // 
@@ -152,7 +153,7 @@
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 37);
+            this.label3.Size = new System.Drawing.Size(171, 31);
             this.label3.TabIndex = 0;
             this.label3.Text = "Tên đầy đủ : ";
             // 
@@ -174,8 +175,8 @@
             this.txbAddress.Dock = System.Windows.Forms.DockStyle.Right;
             this.txbAddress.Location = new System.Drawing.Point(194, 0);
             this.txbAddress.Name = "txbAddress";
-            this.txbAddress.Size = new System.Drawing.Size(513, 44);
-            this.txbAddress.TabIndex = 1;
+            this.txbAddress.Size = new System.Drawing.Size(513, 38);
+            this.txbAddress.TabIndex = 4;
             // 
             // label4
             // 
@@ -184,7 +185,7 @@
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 37);
+            this.label4.Size = new System.Drawing.Size(119, 31);
             this.label4.TabIndex = 0;
             this.label4.Text = "Địa chỉ : ";
             // 
@@ -206,8 +207,8 @@
             this.txbPhone.Dock = System.Windows.Forms.DockStyle.Right;
             this.txbPhone.Location = new System.Drawing.Point(197, 0);
             this.txbPhone.Name = "txbPhone";
-            this.txbPhone.Size = new System.Drawing.Size(510, 44);
-            this.txbPhone.TabIndex = 1;
+            this.txbPhone.Size = new System.Drawing.Size(510, 38);
+            this.txbPhone.TabIndex = 5;
             // 
             // label5
             // 
@@ -216,7 +217,7 @@
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(232, 37);
+            this.label5.Size = new System.Drawing.Size(193, 31);
             this.label5.TabIndex = 0;
             this.label5.Text = "Số điện thoại : ";
             // 
@@ -239,8 +240,8 @@
             this.dtpkBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpkBirth.Location = new System.Drawing.Point(197, 0);
             this.dtpkBirth.Name = "dtpkBirth";
-            this.dtpkBirth.Size = new System.Drawing.Size(510, 44);
-            this.dtpkBirth.TabIndex = 1;
+            this.dtpkBirth.Size = new System.Drawing.Size(510, 38);
+            this.dtpkBirth.TabIndex = 6;
             // 
             // label6
             // 
@@ -249,29 +250,29 @@
             this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(187, 37);
+            this.label6.Size = new System.Drawing.Size(157, 31);
             this.label6.TabIndex = 0;
             this.label6.Text = "Ngày sinh : ";
             // 
             // btnEnter
             // 
             this.btnEnter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEnter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnEnter.Location = new System.Drawing.Point(306, 528);
+            this.btnEnter.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEnter.Location = new System.Drawing.Point(374, 35);
             this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(193, 52);
-            this.btnEnter.TabIndex = 6;
+            this.btnEnter.Size = new System.Drawing.Size(152, 52);
+            this.btnEnter.TabIndex = 7;
             this.btnEnter.Text = "Thêm";
             this.btnEnter.UseVisualStyleBackColor = false;
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.BackColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(518, 528);
+            this.btnCancel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancel.Location = new System.Drawing.Point(559, 528);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(193, 52);
-            this.btnCancel.TabIndex = 7;
+            this.btnCancel.Size = new System.Drawing.Size(152, 52);
+            this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Hủy";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -303,6 +304,7 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.btnEnter);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel7.Location = new System.Drawing.Point(0, 493);
             this.panel7.Name = "panel7";
@@ -311,11 +313,10 @@
             // 
             // fAddDG
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 614);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.lbTitleInfoReader);
@@ -340,6 +341,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

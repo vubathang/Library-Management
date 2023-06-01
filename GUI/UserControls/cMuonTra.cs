@@ -9,10 +9,14 @@ namespace GUI.UserControls
     {
         AccessData accessData = new AccessData();
 
-        public cMuonTra()
+        public cMuonTra(int id)
         {
             InitializeComponent();
+            this.Id = id;
         }
+        int id;
+
+        public int Id { get => id; set => id = value; }
 
         private void cMuonTra_Load(object sender, EventArgs e)
         {
@@ -57,7 +61,7 @@ namespace GUI.UserControls
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            fThemPM f = new fThemPM();
+            fThemPM f = new fThemPM(Id);
             f.ShowDialog();
             cMuonTra_Load(sender, e);
         }
@@ -86,7 +90,7 @@ namespace GUI.UserControls
 
         private void btnYCMS_Click(object sender, EventArgs e)
         {
-            fYCMS f = new fYCMS();
+            fYCMS f = new fYCMS(Id);
             f.ShowDialog();
             cMuonTra_Load(sender, e);
         }

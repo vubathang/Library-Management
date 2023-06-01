@@ -124,6 +124,7 @@
             // 
             this.txtID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtID.Enabled = false;
             this.txtID.Location = new System.Drawing.Point(177, 66);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(264, 38);
@@ -209,9 +210,9 @@
             this.btnLuu.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnLuu.Location = new System.Drawing.Point(685, 578);
+            this.btnLuu.Location = new System.Drawing.Point(678, 590);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(125, 56);
+            this.btnLuu.Size = new System.Drawing.Size(144, 44);
             this.btnLuu.TabIndex = 8;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
@@ -225,15 +226,15 @@
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnThoat.Location = new System.Drawing.Point(891, 578);
+            this.btnThoat.Location = new System.Drawing.Point(872, 590);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(124, 56);
+            this.btnThoat.Size = new System.Drawing.Size(143, 44);
             this.btnThoat.TabIndex = 9;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // fCapNhat
+            // fCapNhatBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -243,7 +244,7 @@
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "fCapNhat";
+            this.Name = "fCapNhatBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fCapNhat";
             this.groupBox1.ResumeLayout(false);
