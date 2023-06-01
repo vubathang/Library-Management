@@ -53,6 +53,30 @@
     <Compile Include="fHomeManagement.Designer.cs">
       <DependentUpon>fHomeManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fCapNhatPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fCapNhatPM.Designer.cs">
+      <DependentUpon>fCapNhatPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fThemPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fThemPM.Designer.cs">
+      <DependentUpon>fThemPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fTraSach.Designer.cs">
+      <DependentUpon>fTraSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fYCMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fYCMS.Designer.cs">
+      <DependentUpon>fYCMS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fAddNV.cs">
       <SubType>Form</SubType>
     </Compile>
