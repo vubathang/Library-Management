@@ -52,6 +52,12 @@
     <Compile Include="fHomeManagement.Designer.cs">
       <DependentUpon>fHomeManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fAdd.Designer.cs">
+      <DependentUpon>fAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="fTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <EmbeddedResource Include="fHomeManagement.resx">
       <DependentUpon>fHomeManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fAdd.resx">
+      <DependentUpon>fAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fTemplate.resx">
       <DependentUpon>fTemplate.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +121,9 @@
     <EmbeddedResource Include="UserControls\cSach.resx">
       <DependentUpon>cSach.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -129,6 +141,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{57e05d67-52fa-4ad1-8178-447b3da762ba}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{1ec42013-bdd8-4b9d-b988-1a6a2d5c2685}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{9fd57a0b-653c-4432-9482-fdac1601d875}</Project>

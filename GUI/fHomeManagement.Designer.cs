@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnlBody = new System.Windows.Forms.Panel();
-            this.lbTitle = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.btnQLMT = new System.Windows.Forms.Button();
             this.btnQLS = new System.Windows.Forms.Button();
             this.btnQLDG = new System.Windows.Forms.Button();
             this.btnQLNV = new System.Windows.Forms.Button();
             this.Home = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbTitle = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pnlBody = new System.Windows.Forms.Panel();
+            this.btnAddmin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -56,71 +57,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 789);
+            this.panel1.Size = new System.Drawing.Size(240, 749);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.lbTitle);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(240, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel2.Size = new System.Drawing.Size(1129, 57);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(831, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(298, 57);
-            this.panel5.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(42, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 57);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "admin";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pnlBody
-            // 
-            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlBody.Location = new System.Drawing.Point(240, 57);
-            this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(1129, 732);
-            this.pnlBody.TabIndex = 2;
-            // 
-            // lbTitle
-            // 
-            this.lbTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle.Location = new System.Drawing.Point(0, 0);
-            this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(369, 57);
-            this.lbTitle.TabIndex = 0;
-            this.lbTitle.Text = "HOME";
-            this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = global::GUI.Properties.Resources.down_arrow1;
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(274, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(24, 57);
-            this.panel6.TabIndex = 1;
             // 
             // btnQLMT
             // 
@@ -206,11 +144,85 @@
             this.Home.TabIndex = 0;
             this.Home.Click += new System.EventHandler(this.Home_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.btnAddmin);
+            this.panel2.Controls.Add(this.lbTitle);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(240, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panel2.Size = new System.Drawing.Size(1129, 57);
+            this.panel2.TabIndex = 1;
+            // 
+            // lbTitle
+            // 
+            this.lbTitle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.Location = new System.Drawing.Point(0, 0);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(369, 57);
+            this.lbTitle.TabIndex = 0;
+            this.lbTitle.Text = "HOME";
+            this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(831, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(298, 57);
+            this.panel5.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Location = new System.Drawing.Point(42, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(232, 57);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "admin";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = global::GUI.Properties.Resources.down_arrow1;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(274, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(24, 57);
+            this.panel6.TabIndex = 1;
+            // 
+            // pnlBody
+            // 
+            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlBody.Location = new System.Drawing.Point(240, 57);
+            this.pnlBody.Name = "pnlBody";
+            this.pnlBody.Size = new System.Drawing.Size(1129, 692);
+            this.pnlBody.TabIndex = 2;
+            // 
+            // btnAddmin
+            // 
+            this.btnAddmin.Location = new System.Drawing.Point(219, 13);
+            this.btnAddmin.Name = "btnAddmin";
+            this.btnAddmin.Size = new System.Drawing.Size(119, 38);
+            this.btnAddmin.TabIndex = 1;
+            this.btnAddmin.Text = "Admin";
+            this.btnAddmin.UseVisualStyleBackColor = true;
+            this.btnAddmin.Click += new System.EventHandler(this.btnAddmin_Click);
+            // 
             // fHomeManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1369, 789);
+            this.ClientSize = new System.Drawing.Size(1369, 749);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -239,5 +251,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label lbTitle;
+        private System.Windows.Forms.Button btnAddmin;
     }
 }

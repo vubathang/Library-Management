@@ -1,4 +1,5 @@
-﻿using GUI.UserControls;
+﻿using GUI.Forms;
+using GUI.UserControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,6 +61,12 @@ namespace GUI
             currentUserControl?.Dispose();
             currentUserControl=null;
             lbTitle.Text = "HOME";
+        }
+
+        private void btnAddmin_Click(object sender, EventArgs e)
+        {
+            fAdd f = new fAdd();
+            f.ShowDialog();
         }
     }
 }
