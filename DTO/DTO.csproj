@@ -46,6 +46,7 @@
     <Compile Include="NhanVien.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="YeuCauMS.cs" />
+    <Compile Include="QuanLySach.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
