@@ -76,6 +76,12 @@
     <Compile Include="Forms\fYCMS.Designer.cs">
       <DependentUpon>fYCMS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fAddDG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fAddDG.Designer.cs">
+      <DependentUpon>fAddDG.cs</DependentUpon>
+    </Compile>
     <Compile Include="fTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fYCMS.resx">
       <DependentUpon>fYCMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fAddDG.resx">
+      <DependentUpon>fAddDG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTemplate.resx">
       <DependentUpon>fTemplate.cs</DependentUpon>
