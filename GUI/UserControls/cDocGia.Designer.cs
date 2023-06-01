@@ -72,7 +72,7 @@
             this.txbAmount.Location = new System.Drawing.Point(149, 0);
             this.txbAmount.Name = "txbAmount";
             this.txbAmount.ReadOnly = true;
-            this.txbAmount.Size = new System.Drawing.Size(76, 44);
+            this.txbAmount.Size = new System.Drawing.Size(76, 38);
             this.txbAmount.TabIndex = 1;
             // 
             // label1
@@ -143,13 +143,13 @@
             this.dtgvDG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvDG.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvDG.Location = new System.Drawing.Point(3, 40);
+            this.dtgvDG.Location = new System.Drawing.Point(3, 34);
             this.dtgvDG.Name = "dtgvDG";
             this.dtgvDG.ReadOnly = true;
             this.dtgvDG.RowHeadersWidth = 62;
             this.dtgvDG.RowTemplate.Height = 28;
             this.dtgvDG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvDG.Size = new System.Drawing.Size(979, 361);
+            this.dtgvDG.Size = new System.Drawing.Size(979, 367);
             this.dtgvDG.TabIndex = 1;
             this.dtgvDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDG_CellClick);
             // 
@@ -166,7 +166,7 @@
             // 
             // cDocGia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
