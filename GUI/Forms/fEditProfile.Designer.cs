@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.txbUserName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,8 +44,8 @@
             this.txbPhone = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.dtpkBirth = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -65,6 +65,15 @@
             this.panel1.Size = new System.Drawing.Size(524, 38);
             this.panel1.TabIndex = 0;
             // 
+            // txbUserName
+            // 
+            this.txbUserName.Dock = System.Windows.Forms.DockStyle.Right;
+            this.txbUserName.Enabled = false;
+            this.txbUserName.Location = new System.Drawing.Point(243, 0);
+            this.txbUserName.Name = "txbUserName";
+            this.txbUserName.Size = new System.Drawing.Size(281, 38);
+            this.txbUserName.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -74,15 +83,6 @@
             this.label1.Size = new System.Drawing.Size(205, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập";
-            // 
-            // txbUserName
-            // 
-            this.txbUserName.Dock = System.Windows.Forms.DockStyle.Right;
-            this.txbUserName.Enabled = false;
-            this.txbUserName.Location = new System.Drawing.Point(243, 0);
-            this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(281, 38);
-            this.txbUserName.TabIndex = 1;
             // 
             // panel2
             // 
@@ -201,6 +201,15 @@
             this.panel6.Size = new System.Drawing.Size(524, 38);
             this.panel6.TabIndex = 5;
             // 
+            // dtpkBirth
+            // 
+            this.dtpkBirth.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dtpkBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkBirth.Location = new System.Drawing.Point(243, 0);
+            this.dtpkBirth.Name = "dtpkBirth";
+            this.dtpkBirth.Size = new System.Drawing.Size(281, 38);
+            this.dtpkBirth.TabIndex = 1;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -210,15 +219,6 @@
             this.label6.Size = new System.Drawing.Size(140, 32);
             this.label6.TabIndex = 0;
             this.label6.Text = "Ngày sinh";
-            // 
-            // dtpkBirth
-            // 
-            this.dtpkBirth.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dtpkBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpkBirth.Location = new System.Drawing.Point(243, 0);
-            this.dtpkBirth.Name = "dtpkBirth";
-            this.dtpkBirth.Size = new System.Drawing.Size(281, 38);
-            this.dtpkBirth.TabIndex = 1;
             // 
             // btnEdit
             // 
@@ -238,6 +238,7 @@
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Visible = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // fEditProfile
@@ -255,7 +256,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "fEditProfile";

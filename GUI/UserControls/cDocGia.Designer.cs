@@ -112,6 +112,7 @@
             this.btnDeleteDG.TabIndex = 2;
             this.btnDeleteDG.Text = "Xóa";
             this.btnDeleteDG.UseVisualStyleBackColor = false;
+            this.btnDeleteDG.Visible = false;
             this.btnDeleteDG.Click += new System.EventHandler(this.btnDeleteDG_Click);
             // 
             // btnEditDG

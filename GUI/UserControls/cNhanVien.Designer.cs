@@ -90,6 +90,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Visible = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
@@ -130,7 +131,7 @@
             this.txbSum.Location = new System.Drawing.Point(100, 2);
             this.txbSum.Name = "txbSum";
             this.txbSum.ReadOnly = true;
-            this.txbSum.Size = new System.Drawing.Size(94, 44);
+            this.txbSum.Size = new System.Drawing.Size(94, 38);
             this.txbSum.TabIndex = 1;
             // 
             // label1
@@ -138,7 +139,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 37);
+            this.label1.Size = new System.Drawing.Size(76, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tổng";
             // 
@@ -159,7 +160,7 @@
             // 
             // cNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgvNV);
             this.Controls.Add(this.panel1);
