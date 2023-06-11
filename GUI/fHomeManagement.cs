@@ -1,4 +1,5 @@
-﻿using GUI.UserControls;
+﻿using GUI.Forms;
+using GUI.UserControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +14,16 @@ namespace GUI
 {
     public partial class fHomeManagement : Form
     {
-        public fHomeManagement()
+        public fHomeManagement(int id)
         {
             InitializeComponent();
+            this.Id = id;
         }
+        int id;
         private UserControl currentUserControl;
+
+        public int Id { get => id; set => id = value; }
+
         private void OpenUserControl(UserControl userControl)
         {
             if (currentUserControl != null)
@@ -51,7 +57,7 @@ namespace GUI
 
         private void btnQLMT_Click(object sender, EventArgs e)
         {
-            OpenUserControl(new cMuonTra());
+            OpenUserControl(new cMuonTra(Id));
             lbTitle.Text = "QUẢN LÝ MƯỢN TRẢ";
         }
 
@@ -60,6 +66,20 @@ namespace GUI
             currentUserControl?.Dispose();
             currentUserControl=null;
             lbTitle.Text = "HOME";
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            fEditProfile f = new fEditProfile(Id, this);
+            f.ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn đăng xuất?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Close();
+            }
         }
     }
 }

@@ -17,4 +17,4 @@
 # Ignore Visual Studio workspace folder
 .vs/
 
-
+Environment.cs
