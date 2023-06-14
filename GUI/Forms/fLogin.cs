@@ -20,16 +20,29 @@ namespace GUI.Forms
         AccessData accessData = new AccessData();
         string password;
         int id;
+        string type;
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string userName = txbUserName.Text;
             string password = txbPassword.Text;
             if(Login(userName, password))
             {
-                fHomeManagement form = new fHomeManagement(id);
-                this.Hide();
-                form.ShowDialog();
-                this.Show();
+                if (type == "3")
+                {
+
+                    fHomeLibrary form = new fHomeLibrary();
+                    this.Hide();
+                    form.ShowDialog();
+                    this.Show();
+                }
+                else
+                {
+                    fHomeManagement form = new fHomeManagement(id);
+                    this.Hide();
+                    form.ShowDialog();
+                    this.Show();
+                }
             }
             else
             {
@@ -47,6 +60,7 @@ namespace GUI.Forms
 
             if (dt.Rows.Count > 0)
             {
+                type = dt.Rows[0]["type"].ToString();
                 password = dt.Rows[0]["password"].ToString();
                 id = Convert.ToInt32(dt.Rows[0]["id"]);
 

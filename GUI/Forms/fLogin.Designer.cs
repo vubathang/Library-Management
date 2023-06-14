@@ -54,7 +54,7 @@
             this.txbUserName.Dock = System.Windows.Forms.DockStyle.Right;
             this.txbUserName.Location = new System.Drawing.Point(211, 0);
             this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(245, 38);
+            this.txbUserName.Size = new System.Drawing.Size(245, 44);
             this.txbUserName.TabIndex = 1;
             // 
             // label1
@@ -63,7 +63,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 32);
+            this.label1.Size = new System.Drawing.Size(235, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập";
             // 
@@ -82,7 +82,7 @@
             this.txbPassword.Location = new System.Drawing.Point(211, 0);
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.PasswordChar = '*';
-            this.txbPassword.Size = new System.Drawing.Size(245, 38);
+            this.txbPassword.Size = new System.Drawing.Size(245, 44);
             this.txbPassword.TabIndex = 1;
             // 
             // label2
@@ -91,7 +91,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 32);
+            this.label2.Size = new System.Drawing.Size(151, 38);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mật khẩu";
             // 
@@ -117,7 +117,7 @@
             // 
             // fLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 265);
             this.Controls.Add(this.btnExit);
