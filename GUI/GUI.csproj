@@ -71,6 +71,12 @@
     <Compile Include="Forms\fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fSignup.Designer.cs">
+      <DependentUpon>fSignup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fThemBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     <EmbeddedResource Include="Forms\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fSignup.resx">
+      <DependentUpon>fSignup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fThemBook.resx">
       <DependentUpon>fThemBook.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +269,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Forms\Demo.txt" />
+    <None Include="Resources\imgfDangKy.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
