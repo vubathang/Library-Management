@@ -15,18 +15,18 @@ namespace GUI.Forms
 {
     public partial class fEditProfile : Form
     {
-        public fEditProfile(int id, fHomeManagement f)
+        public fEditProfile(int id)
         {
             InitializeComponent();
             Id = id;
-            this.F = f;
+            //this.F = f;
         }
         int id;
         fHomeManagement f;
         AccessData accessData = new AccessData();
 
         public int Id { get => id; set => id = value; }
-        public fHomeManagement F { get => f; set => f = value; }
+        //public fHomeManagement F { get => f; set => f = value; }
 
         private bool Check()
         {
@@ -105,7 +105,7 @@ namespace GUI.Forms
                     accessData.Command(query);
                     MessageBox.Show("Xóa thành công!");
                     this.Close();
-                    F.Close();
+                    //F.Close();
                 }
                 catch (Exception ex)
                 {

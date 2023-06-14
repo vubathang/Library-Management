@@ -79,6 +79,7 @@ namespace GUI.UserControls
             this.Margin = new System.Windows.Forms.Padding(40, 10, 40, 80);
             this.Name = "BookItem";
             this.Size = new System.Drawing.Size(450, 175);
+            this.Click += new System.EventHandler(this.BookItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

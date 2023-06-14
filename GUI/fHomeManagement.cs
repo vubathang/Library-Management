@@ -70,7 +70,7 @@ namespace GUI
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            fEditProfile f = new fEditProfile(Id, this);
+            fEditProfile f = new fEditProfile(Id);
             f.ShowDialog();
         }
 

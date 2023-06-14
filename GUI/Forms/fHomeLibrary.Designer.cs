@@ -34,17 +34,19 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.pnNoCustomer = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.linkDN = new System.Windows.Forms.LinkLabel();
+            this.linkDK = new System.Windows.Forms.LinkLabel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.pnNoCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,7 +55,7 @@
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.pnNoCustomer);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -109,47 +111,22 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel4
+            // pnNoCustomer
             // 
-            this.panel4.Controls.Add(this.linkLabel1);
-            this.panel4.Controls.Add(this.linkLabel2);
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1438, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(351, 336);
-            this.panel4.TabIndex = 5;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.SystemColors.ControlText;
-            this.linkLabel1.Location = new System.Drawing.Point(78, 9);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(131, 32);
-            this.linkLabel1.TabIndex = 3;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Đăng nhập";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkColor = System.Drawing.SystemColors.ControlText;
-            this.linkLabel2.Location = new System.Drawing.Point(215, 9);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(101, 32);
-            this.linkLabel2.TabIndex = 4;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Đăng ký";
+            this.pnNoCustomer.Controls.Add(this.panel2);
+            this.pnNoCustomer.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnNoCustomer.Location = new System.Drawing.Point(1438, 0);
+            this.pnNoCustomer.Name = "pnNoCustomer";
+            this.pnNoCustomer.Size = new System.Drawing.Size(351, 336);
+            this.pnNoCustomer.TabIndex = 5;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox2.Image = global::GUI.Properties.Resources.user__2_;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(19, 20);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 45);
+            this.pictureBox2.Size = new System.Drawing.Size(50, 47);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -166,6 +143,49 @@
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(150, 30, 0, 10);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1789, 492);
             this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // linkDN
+            // 
+            this.linkDN.AutoSize = true;
+            this.linkDN.Dock = System.Windows.Forms.DockStyle.Right;
+            this.linkDN.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkDN.LinkColor = System.Drawing.SystemColors.ControlText;
+            this.linkDN.Location = new System.Drawing.Point(185, 20);
+            this.linkDN.Margin = new System.Windows.Forms.Padding(0);
+            this.linkDN.Name = "linkDN";
+            this.linkDN.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
+            this.linkDN.Size = new System.Drawing.Size(146, 32);
+            this.linkDN.TabIndex = 3;
+            this.linkDN.TabStop = true;
+            this.linkDN.Text = "Đăng nhập";
+            // 
+            // linkDK
+            // 
+            this.linkDK.AutoSize = true;
+            this.linkDK.Dock = System.Windows.Forms.DockStyle.Right;
+            this.linkDK.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkDK.LinkColor = System.Drawing.SystemColors.ControlText;
+            this.linkDK.Location = new System.Drawing.Point(69, 20);
+            this.linkDK.Margin = new System.Windows.Forms.Padding(0);
+            this.linkDK.Name = "linkDK";
+            this.linkDK.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
+            this.linkDK.Size = new System.Drawing.Size(116, 32);
+            this.linkDK.TabIndex = 4;
+            this.linkDK.TabStop = true;
+            this.linkDK.Text = "Đăng ký";
+            this.linkDK.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkDK_LinkClicked);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.linkDK);
+            this.panel2.Controls.Add(this.linkDN);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(0, 20, 20, 0);
+            this.panel2.Size = new System.Drawing.Size(351, 67);
+            this.panel2.TabIndex = 5;
             // 
             // fHomeLibrary
             // 
@@ -186,9 +206,10 @@
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.pnNoCustomer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,10 +223,11 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Panel pnNoCustomer;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.LinkLabel linkDK;
+        private System.Windows.Forms.LinkLabel linkDN;
     }
 }

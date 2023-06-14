@@ -14,9 +14,19 @@ namespace GUI.Forms
 {
     public partial class fHomeLibrary : Form
     {
-        public fHomeLibrary()
+        int ID;
+        public fHomeLibrary(int id)
         {
             InitializeComponent();
+            ID = id;
+            
+            if (ID != -1)
+            {
+                DataTable customer = new DataTable();
+                customer = accessdata.GetTable($"SELECT * FROM NguoiDung WHERE id = {ID}");
+                linkDK.Text = customer.Rows[0]["fullName"].ToString();
+                linkDN.Visible = false;
+            }
         }
         AccessData accessdata = new AccessData();
         DataTable dt = new DataTable();
@@ -65,6 +75,12 @@ namespace GUI.Forms
                     RenderBook("SELECT id From Sach");
                 }
             }
+        }
+
+        private void linkDK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            fEditProfile f = new fEditProfile(ID);
+            f.ShowDialog();
         }
     }
 }
