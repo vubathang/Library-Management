@@ -80,6 +80,12 @@
     <Compile Include="fHomeManagement.Designer.cs">
       <DependentUpon>fHomeManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Chitietthongtinsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Chitietthongtinsach.Designer.cs">
+      <DependentUpon>Chitietthongtinsach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fCapNhatBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fHomeManagement.resx">
       <DependentUpon>fHomeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Chitietthongtinsach.resx">
+      <DependentUpon>Chitietthongtinsach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fAddDG.resx">
       <DependentUpon>fAddDG.cs</DependentUpon>
@@ -343,6 +352,7 @@
     <None Include="Resources\rounded-in-photoretrica %281%29.png" />
     <None Include="Resources\rounded-in-photoretrica.png" />
     <None Include="Resources\user.png" />
+    <None Include="Resources\item.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

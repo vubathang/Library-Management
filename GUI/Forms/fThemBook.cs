@@ -87,5 +87,10 @@ namespace GUI.Forms
                 Close();
             }
         }
+
+        private void fThemBook_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
