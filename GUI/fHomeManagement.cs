@@ -1,4 +1,5 @@
-﻿using GUI.Forms;
+﻿using DAL;
+using GUI.Forms;
 using GUI.UserControls;
 using System;
 using System.Collections.Generic;
@@ -18,9 +19,14 @@ namespace GUI
         {
             InitializeComponent();
             this.Id = id;
+
+            DataTable customer = new DataTable();
+            customer = accessdata.GetTable($"SELECT * FROM NguoiDung WHERE id = {Id}");
+            lbNameStaff.Text = customer.Rows[0]["fullName"].ToString();
         }
         int id;
         private UserControl currentUserControl;
+        AccessData accessdata = new AccessData();
 
         public int Id { get => id; set => id = value; }
 
@@ -70,7 +76,7 @@ namespace GUI
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            fEditProfile f = new fEditProfile(Id, this);
+            fEditProfile f = new fEditProfile(Id);
             f.ShowDialog();
         }
 

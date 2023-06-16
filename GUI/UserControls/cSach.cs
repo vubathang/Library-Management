@@ -109,5 +109,15 @@ namespace GUI.UserControls
         {
             indexCurrent = dtgSach.CurrentRow.Index;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbTongSo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -71,7 +71,7 @@
             this.txbUserName.Enabled = false;
             this.txbUserName.Location = new System.Drawing.Point(243, 0);
             this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(281, 38);
+            this.txbUserName.Size = new System.Drawing.Size(281, 44);
             this.txbUserName.TabIndex = 1;
             // 
             // label1
@@ -80,7 +80,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 32);
+            this.label1.Size = new System.Drawing.Size(235, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập";
             // 
@@ -98,7 +98,7 @@
             this.txbPassword.Dock = System.Windows.Forms.DockStyle.Right;
             this.txbPassword.Location = new System.Drawing.Point(243, 0);
             this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(281, 38);
+            this.txbPassword.Size = new System.Drawing.Size(281, 44);
             this.txbPassword.TabIndex = 1;
             // 
             // label2
@@ -107,7 +107,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 32);
+            this.label2.Size = new System.Drawing.Size(151, 38);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mật khẩu";
             // 
@@ -125,7 +125,7 @@
             this.txbFullName.Dock = System.Windows.Forms.DockStyle.Right;
             this.txbFullName.Location = new System.Drawing.Point(243, 0);
             this.txbFullName.Name = "txbFullName";
-            this.txbFullName.Size = new System.Drawing.Size(281, 38);
+            this.txbFullName.Size = new System.Drawing.Size(281, 44);
             this.txbFullName.TabIndex = 1;
             // 
             // label3
@@ -134,7 +134,7 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Left;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 32);
+            this.label3.Size = new System.Drawing.Size(157, 38);
             this.label3.TabIndex = 0;
             this.label3.Text = "Họ và tên";
             // 
@@ -152,7 +152,7 @@
             this.txbAddress.Dock = System.Windows.Forms.DockStyle.Right;
             this.txbAddress.Location = new System.Drawing.Point(243, 0);
             this.txbAddress.Name = "txbAddress";
-            this.txbAddress.Size = new System.Drawing.Size(281, 38);
+            this.txbAddress.Size = new System.Drawing.Size(281, 44);
             this.txbAddress.TabIndex = 1;
             // 
             // label4
@@ -161,7 +161,7 @@
             this.label4.Dock = System.Windows.Forms.DockStyle.Left;
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 32);
+            this.label4.Size = new System.Drawing.Size(117, 38);
             this.label4.TabIndex = 0;
             this.label4.Text = "Địa chỉ";
             // 
@@ -179,7 +179,7 @@
             this.txbPhone.Dock = System.Windows.Forms.DockStyle.Right;
             this.txbPhone.Location = new System.Drawing.Point(243, 0);
             this.txbPhone.Name = "txbPhone";
-            this.txbPhone.Size = new System.Drawing.Size(281, 38);
+            this.txbPhone.Size = new System.Drawing.Size(281, 44);
             this.txbPhone.TabIndex = 1;
             // 
             // label5
@@ -188,7 +188,7 @@
             this.label5.Dock = System.Windows.Forms.DockStyle.Left;
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 32);
+            this.label5.Size = new System.Drawing.Size(206, 38);
             this.label5.TabIndex = 0;
             this.label5.Text = "Số điện thoại";
             // 
@@ -207,7 +207,7 @@
             this.dtpkBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpkBirth.Location = new System.Drawing.Point(243, 0);
             this.dtpkBirth.Name = "dtpkBirth";
-            this.dtpkBirth.Size = new System.Drawing.Size(281, 38);
+            this.dtpkBirth.Size = new System.Drawing.Size(281, 44);
             this.dtpkBirth.TabIndex = 1;
             // 
             // label6
@@ -216,15 +216,15 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
             this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 32);
+            this.label6.Size = new System.Drawing.Size(163, 38);
             this.label6.TabIndex = 0;
             this.label6.Text = "Ngày sinh";
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(260, 457);
+            this.btnEdit.Location = new System.Drawing.Point(221, 451);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(154, 42);
+            this.btnEdit.Size = new System.Drawing.Size(193, 48);
             this.btnEdit.TabIndex = 6;
             this.btnEdit.Text = "Cập nhật";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -232,9 +232,9 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(446, 457);
+            this.btnDelete.Location = new System.Drawing.Point(446, 451);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(108, 42);
+            this.btnDelete.Size = new System.Drawing.Size(108, 48);
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -243,7 +243,7 @@
             // 
             // fEditProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 511);
             this.Controls.Add(this.btnDelete);

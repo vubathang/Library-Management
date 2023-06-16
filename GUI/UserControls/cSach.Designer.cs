@@ -44,30 +44,31 @@
             // 
             // txbTongSo
             // 
-            this.txbTongSo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txbTongSo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txbTongSo.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.txbTongSo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbTongSo.Location = new System.Drawing.Point(1110, 162);
+            this.txbTongSo.Location = new System.Drawing.Point(1304, 92);
             this.txbTongSo.Name = "txbTongSo";
             this.txbTongSo.ReadOnly = true;
-            this.txbTongSo.Size = new System.Drawing.Size(157, 38);
+            this.txbTongSo.Size = new System.Drawing.Size(157, 44);
             this.txbTongSo.TabIndex = 2;
+            this.txbTongSo.TextChanged += new System.EventHandler(this.txbTongSo_TextChanged);
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(982, 164);
+            this.label1.Location = new System.Drawing.Point(1132, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 31);
+            this.label1.Size = new System.Drawing.Size(134, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tổng số";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnXoa
             // 
-            this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnXoa.Location = new System.Drawing.Point(516, 118);
+            this.btnXoa.Location = new System.Drawing.Point(516, 43);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(131, 50);
             this.btnXoa.TabIndex = 0;
@@ -78,12 +79,11 @@
             // 
             // btnCapNhat
             // 
-            this.btnCapNhat.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnCapNhat.AutoSize = true;
             this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnCapNhat.Location = new System.Drawing.Point(276, 118);
+            this.btnCapNhat.Location = new System.Drawing.Point(276, 43);
             this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(138, 50);
+            this.btnCapNhat.Size = new System.Drawing.Size(162, 50);
             this.btnCapNhat.TabIndex = 0;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
@@ -91,11 +91,10 @@
             // 
             // btnThem
             // 
-            this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnThem.AutoSize = true;
             this.btnThem.BackColor = System.Drawing.Color.White;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnThem.Location = new System.Drawing.Point(45, 118);
+            this.btnThem.Location = new System.Drawing.Point(45, 43);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(130, 50);
             this.btnThem.TabIndex = 0;
@@ -111,34 +110,35 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.dtgSach);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox1.Location = new System.Drawing.Point(10, 222);
+            this.groupBox1.Location = new System.Drawing.Point(10, 142);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1490, 639);
+            this.groupBox1.Size = new System.Drawing.Size(1490, 719);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách sách";
             // 
             // dtgSach
             // 
-            this.dtgSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgSach.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgSach.Location = new System.Drawing.Point(6, 71);
+            this.dtgSach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgSach.Location = new System.Drawing.Point(3, 40);
             this.dtgSach.Name = "dtgSach";
             this.dtgSach.ReadOnly = true;
             this.dtgSach.RowHeadersWidth = 51;
             this.dtgSach.RowTemplate.Height = 24;
-            this.dtgSach.Size = new System.Drawing.Size(1478, 499);
+            this.dtgSach.Size = new System.Drawing.Size(1484, 676);
             this.dtgSach.TabIndex = 0;
             this.dtgSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgSach_CellClick);
             // 
             // cSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.Controls.Add(this.btnCapNhat);
