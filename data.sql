@@ -8,7 +8,7 @@ GO
 -- Sach
 -- PhieuMuon
 -- ChiTietPM
--- YeuCauMS9
+-- YeuCauMS
 
 CREATE TABLE NguoiDung
 (
@@ -89,7 +89,7 @@ BEGIN
 	SELECT @idDG = idDG, @idBook = idBook, @amount = quantity FROM YeuCauMS WHERE id = @idYC
 
     INSERT INTO PhieuMuon (idDG, idTT, idKT, borrowDate, returnDate, amount, deposit, refund, statusPM, statusBook)
-    VALUES (@idDG, @idTT, NULL, NULL, NULL, @amount, 0, 0, N'Chưa Thanh Toán', N'Tốt')
+    VALUES (@idDG, @idTT, NULL, NULL, NULL, @amount, 0, 0, N'Chưa thanh toán', N'Tốt')
 
     SET @idPM = SCOPE_IDENTITY()
 
@@ -137,10 +137,77 @@ END
  	DELETE FROM PhieuMuon WHERE id = @idPM
  END
 
+-- Insert data
+INSERT INTO NguoiDung (userName, passWord, type, fullName, phone, birth, address)
+VALUES ('admin1', 'password1', '0', 'Admin 1', '1234567890', '1995-01-01', 'Address 1'),
+('thuthu1', 'password2', '1', 'Thủ Thư 1', '0987654321', '1995-05-10', 'Address 2'),
+('ketoan1', 'password3', '2', 'Kế Toán 1', '0123456789', '1998-12-25', 'Address 3'),
+('docgia1', 'docgia1', '3', 'Độc Giả 1', '0912345678', '1997-09-15', 'Address 4'),
+('docgia2', 'docgia2', '3', 'Độc Giả 2', '0909876543', '1996-07-20', 'Address 5'),
+('docgia3', 'docgia3', '3', 'Độc Giả 3', '0378942378', '1999-07-20', 'Address 6'),
+('docgia4', 'docgia4', '3', 'Độc Giả 4', '0372974324', '2000-07-20', 'Address 7'),
+('docgia5', 'docgia5', '3', 'Độc Giả 5', '0912345678', '1993-08-25', 'Address 8'),
+('docgia6', 'docgia6', '3', 'Độc Giả 6', '0909876543', '1992-06-30', 'Address 9'),
+('docgia7', 'docgia7', '3', 'Độc Giả 7', '0987654321', '1991-02-15', 'Address 10');
+GO
+
+INSERT INTO Sach (title, author, publisher, publicationYear, catagory, quantity)
+VALUES ('Sách 1', 'Tác Giả 1', 'Nhà Xuất Bản 1', '2020-01-01', 'Thể Loại 1', 20),
+('Sách 2', 'Tác Giả 2', 'Nhà Xuất Bản 2', '2019-02-05', 'Thể Loại 2', 20),
+('Sách 3', 'Tác Giả 3', 'Nhà Xuất Bản 3', '2018-03-10', 'Thể Loại 1', 25),
+('Sách 4', 'Tác Giả 4', 'Nhà Xuất Bản 1', '2021-06-15', 'Thể Loại 3', 30),
+('Sách 5', 'Tác Giả 2', 'Nhà Xuất Bản 2', '2022-09-20', 'Thể Loại 2', 25),
+('Sách 6', 'Tác Giả 3', 'Nhà Xuất Bản 3', '2017-11-25', 'Thể Loại 1', 20),
+('Sách 7', 'Tác Giả 1', 'Nhà Xuất Bản 1', '2023-03-12', 'Thể Loại 3', 15),
+('Sách 8', 'Tác Giả 4', 'Nhà Xuất Bản 2', '2020-05-18', 'Thể Loại 2', 20),
+('Sách 9', 'Tác Giả 2', 'Nhà Xuất Bản 3', '2019-07-23', 'Thể Loại 1', 25),
+('Sách 10', 'Tác Giả 3', 'Nhà Xuất Bản 1', '2022-09-30', 'Thể Loại 3', 30);
+GO
+
+INSERT INTO PhieuMuon (idDG, idTT, idKT, borrowDate, returnDate, amount, deposit, refund, statusPM, statusBook)
+VALUES
+(4, 2, NULL, '2023-06-10', '2023-05-20', 2, 0, NULL, 'Chưa thanh toán', 'Tốt'),
+(5, 2, NULL, '2023-06-12', '2023-04-19', 3, 0, NULL, 'Chưa thanh toán', 'Tốt'),
+(7, 2, NULL, '2023-06-15', '2023-05-22', 1, 0, NULL, 'Chưa thanh toán', 'Tốt'),
+(4, 2, 3, '2023-06-16', '2023-05-23', 2, 50000, NULL, 'Đã thanh toán', 'Tốt'),
+(6, 2, 3, '2023-06-18', '2023-05-25', 1, 40000, NULL, 'Đã thanh toán', 'Tốt'),
+(8, 2, 3, '2023-06-20', '2023-05-27', 2, 30000, NULL, 'Đã thanh toán', 'Tốt'),
+(9, 2, 3, '2023-06-22', '2023-05-29', 3, 80000, NULL, 'Đã trả', 'Tốt'),
+(10, 2, 3, '2023-06-24', '2023-05-01', 2, 50000, NULL, 'Đã trả', 'Tốt'),
+(7, 2, 3, '2023-06-26', '2023-05-03', 1, 30000, NULL, 'Đã trả', 'Tốt'),
+(8, 2, 3, '2023-06-28', '2023-05-05', 2, 40000, 40000, 'Hoàn thành', 'Tốt');
+GO
+
+INSERT INTO ChiTietPM (idPM, idBook, quantity)
+VALUES
+(1, 2, 2),
+(2, 3, 3),
+(3, 1, 1),
+(4, 5, 2),
+(5, 4, 1),
+(6, 1, 2),
+(7, 4, 3),
+(8, 5, 2),
+(9, 3, 1),
+(10, 2, 2);
+GO
+
+INSERT INTO YeuCauMS (idDG, idBook, requestDate, quantity)
+VALUES
+(5, 5, '2023-06-11', 2),
+(7, 4, '2023-06-13', 1),
+(4, 1, '2023-06-16', 3),
+(6, 2, '2023-06-17', 2),
+(9, 3, '2023-06-18', 1),
+(10, 4, '2023-06-14', 2),
+(8, 2, '2023-06-10', 1),
+(5, 5, '2023-06-06', 3),
+(8, 3, '2023-06-01', 2),
+(7, 1, '2023-05-25', 1);
+GO
+
 SELECT * FROM dbo.NguoiDung
 SELECT * FROM dbo.Sach
 SELECT * FROM dbo.YeuCauMS
 SELECT * FROM dbo.PhieuMuon
 SELECT * FROM dbo.ChiTietPM
-
-
